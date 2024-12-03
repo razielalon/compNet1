@@ -4,6 +4,7 @@ def hammingCalc(c):
     ascii_c = format(ord(c), '08b')
     left = ascii_c[:4]
     right = ascii_c[4:]
+    to_return = []
     for i in range(2):
         if i == 0:
             s = left
@@ -25,4 +26,7 @@ def hammingCalc(c):
 
         s = p1 + p2 + s[0] + p3 + s[1] + s[2] + s[3]
         print(s)
+        to_return.append(s)
+    return to_return
+
 

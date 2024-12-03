@@ -17,5 +17,6 @@ def hammingCheck(coded_word):
             coded_word = coded_word[:errorInd] + "0" + coded_word[errorInd+1:]
         else:
             coded_word = coded_word[:errorInd] + "1" + coded_word[errorInd+1:]
-        print(f"the word has corrected to: {coded_word}")
+        print(coded_word)
+        return coded_word
 
